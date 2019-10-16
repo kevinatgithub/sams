@@ -1,7 +1,7 @@
 ﻿Public Class New_Employee_2
     Inherits MetroFramework.Forms.MetroForm
 
-    Private webcam As WebCam
+    'Private webcam As WebCam
     Public CurrentEmployee As Employee
     Public NextStep As New_Employee_3
     Public PreviousStep As New_Employee
@@ -19,28 +19,28 @@
 
 
     Private Sub New_Employee_2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        webcam = New WebCam()
-        webcam.InitializeWebCam(pb_pic)
+        'webcam = New WebCam()
+        'webcam.InitializeWebCam(pb_pic)
         NextStep = New New_Employee_3(Me, CurrentEmployee)
     End Sub
 
     Private Sub btn_upload_Click(sender As Object, e As EventArgs) Handles btn_upload.Click
-        webcam.Stop()
+        'webcam.Stop()
         CanYou.Please.OpenAnImageInPicturebox(pb_pic)
 
     End Sub
 
     Private Sub btn_start_camera_Click(sender As Object, e As EventArgs) Handles btn_start_camera.Click
 
-        webcam.Start()
-        webcam.Continue()
+        'webcam.Start()
+        'webcam.Continue()
         btn_start_camera.Enabled = False
         btn_capture.Enabled = True
     End Sub
 
 
     Private Sub btn_capture_Click(sender As Object, e As EventArgs) Handles btn_capture.Click
-        webcam.Stop()
+        'webcam.Stop()
         btn_start_camera.Enabled = True
         btn_capture.Enabled = False
 
