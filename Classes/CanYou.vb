@@ -92,7 +92,8 @@ Public Class CanYou
         Dim ofd As New OpenFileDialog
         ofd.Filter = "Bitmap|*.bmp|JPEG|*.jpg" 'If you like file type filters you can add them here
         'any other modifications to the dialog
-        If ofd.ShowDialog = Windows.Forms.DialogResult.Cancel Then Exit Sub
+        'If ofd.ShowDialog = Windows.Forms.DialogResult.Cancel Then Exit Sub
+        If ofd.ShowDialog = DialogResult.Cancel Then Exit Sub
         Try
             Dim bmp As New Bitmap(ofd.FileName)
             If Not IsNothing(pb.Image) Then pb.Image.Dispose() 'Optional if you want to destroy the previously loaded image
