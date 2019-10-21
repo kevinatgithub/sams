@@ -179,4 +179,9 @@ Public Class List
             dtr.Show()
         Next
     End Sub
+
+    Private Sub btn_verify_employee_Click(sender As Object, e As EventArgs) Handles btn_verify_employee.Click
+        Dim verify = New VerifyEmployee
+        verify.Show()
+    End Sub
 End Class

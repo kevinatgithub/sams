@@ -60,6 +60,7 @@ Partial Class List
         Me.cbo_gender = New MetroFramework.Controls.MetroComboBox()
         Me.cbo_position = New MetroFramework.Controls.MetroComboBox()
         Me.MetroLabel8 = New MetroFramework.Controls.MetroLabel()
+        Me.btn_verify_employee = New MetroFramework.Controls.MetroButton()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.cm_list.SuspendLayout()
         Me.SuspendLayout()
@@ -329,9 +330,17 @@ Partial Class List
         Me.MetroLabel8.AutoSize = True
         Me.MetroLabel8.Location = New System.Drawing.Point(24, 401)
         Me.MetroLabel8.Name = "MetroLabel8"
-        Me.MetroLabel8.Size = New System.Drawing.Size(55, 19)
+        Me.MetroLabel8.Size = New System.Drawing.Size(54, 19)
         Me.MetroLabel8.TabIndex = 23
         Me.MetroLabel8.Text = "Position"
+        '
+        'btn_verify_employee
+        '
+        Me.btn_verify_employee.Location = New System.Drawing.Point(24, 571)
+        Me.btn_verify_employee.Name = "btn_verify_employee"
+        Me.btn_verify_employee.Size = New System.Drawing.Size(162, 23)
+        Me.btn_verify_employee.TabIndex = 25
+        Me.btn_verify_employee.Text = "Verify Employee"
         '
         'List
         '
@@ -339,6 +348,7 @@ Partial Class List
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle
         Me.ClientSize = New System.Drawing.Size(1159, 788)
+        Me.Controls.Add(Me.btn_verify_employee)
         Me.Controls.Add(Me.cbo_position)
         Me.Controls.Add(Me.MetroLabel8)
         Me.Controls.Add(Me.cbo_gender)
@@ -409,5 +419,5 @@ End Sub
     Friend WithEvents cbo_gender As MetroFramework.Controls.MetroComboBox
     Friend WithEvents cbo_position As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroLabel8 As MetroFramework.Controls.MetroLabel
-
+    Friend WithEvents btn_verify_employee As MetroFramework.Controls.MetroButton
 End Class

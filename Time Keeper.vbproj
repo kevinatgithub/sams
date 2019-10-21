@@ -219,6 +219,12 @@
     <Compile Include="Scanning\Enroll.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Scanning\VerifyEmployee.Designer.vb">
+      <DependentUpon>VerifyEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\VerifyEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Show Employee.Designer.vb">
       <DependentUpon>Show Employee.vb</DependentUpon>
     </Compile>
@@ -301,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Scanning\Enroll.resx">
       <DependentUpon>Enroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\VerifyEmployee.resx">
+      <DependentUpon>VerifyEmployee.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Show Employee.resx">
       <DependentUpon>Show Employee.vb</DependentUpon>

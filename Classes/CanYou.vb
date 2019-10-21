@@ -40,29 +40,39 @@ Public Class CanYou
     End Sub
 
     Public Sub MakeADefaultConfigFile()
-        Dim sw As New IO.StreamWriter(ConfigFileName)
-        Dim config As New AppConfig
-        Dim configStr As String = JsonConvert.SerializeObject(config)
-        sw.WriteLine(configStr)
-        sw.Close()
+        Try
+            Dim sw As New IO.StreamWriter(ConfigFileName)
+            Dim config As New AppConfig
+            Dim configStr As String = JsonConvert.SerializeObject(config)
+            sw.WriteLine(configStr)
+            sw.Close()
+        Catch ex As Exception
+            MsgBox("No configuration file found, Please run Time Keeper as administrator to create default configuration file.")
+            End
+        End Try
     End Sub
 
     Public Function ReadConfigFile() As AppConfig
-        Dim cfg As String = ReadFile(ConfigFileName)
-        If Not cfg Is Nothing Then
-            Dim c As New Newtonsoft.Json.Linq.JObject
-            c = JsonConvert.DeserializeObject(cfg)
+        Try
+            Dim cfg As String = ReadFile(ConfigFileName)
+            If Not cfg Is Nothing Then
+                Dim c As New Newtonsoft.Json.Linq.JObject
+                c = JsonConvert.DeserializeObject(cfg)
 
-            Dim o As New AppConfig
+                Dim o As New AppConfig
 
-            o.Host = c.GetValue("Host").ToString
-            o.UserId = c.GetValue("UserId").ToString
-            o.Password = c.GetValue("Password").ToString
-            o.Database = c.GetValue("Database").ToString
-            o.ServerURL = c.GetValue("ServerURL").ToString
+                o.Host = c.GetValue("Host").ToString
+                o.UserId = c.GetValue("UserId").ToString
+                o.Password = c.GetValue("Password").ToString
+                o.Database = c.GetValue("Database").ToString
+                o.ServerURL = c.GetValue("ServerURL").ToString
 
-            Return o
-        End If
+                Return o
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
         Return New AppConfig
     End Function
 
