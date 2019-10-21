@@ -31,7 +31,7 @@ Partial Class VerifyEmployee
         '
         'btn_cancel
         '
-        Me.btn_cancel.Location = New System.Drawing.Point(261, 158)
+        Me.btn_cancel.Location = New System.Drawing.Point(553, 175)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(75, 23)
         Me.btn_cancel.TabIndex = 8
@@ -68,7 +68,7 @@ Partial Class VerifyEmployee
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(359, 212)
+        Me.ClientSize = New System.Drawing.Size(651, 221)
         Me.Controls.Add(Me.lbl_name)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.lbl_status)

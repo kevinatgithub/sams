@@ -175,7 +175,8 @@ Public Class List
     Private Sub cmi_dtr_Click(sender As Object, e As EventArgs) Handles cmi_dtr.Click
         For Each item As ListViewItem In lv_employees.SelectedItems
             Dim employee As Employee = employee.FindByEmployeeNo(item.Text)
-            Dim dtr As New TimeCard(Me, employee)
+            'Dim dtr As New TimeCard(Me, employee)
+            Dim dtr As New TimeCardManager(Me, employee)
             dtr.Show()
         Next
     End Sub
@@ -184,4 +185,5 @@ Public Class List
         Dim verify = New VerifyEmployee
         verify.Show()
     End Sub
+
 End Class

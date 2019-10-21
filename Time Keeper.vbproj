@@ -231,6 +231,12 @@
     <Compile Include="Show Employee.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Time Card Printing\TimeCardManager.Designer.vb">
+      <DependentUpon>TimeCardManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Time Card Printing\TimeCardManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Time Keeping.Designer.vb">
       <DependentUpon>Time Keeping.vb</DependentUpon>
     </Compile>
@@ -313,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Show Employee.resx">
       <DependentUpon>Show Employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Time Card Printing\TimeCardManager.resx">
+      <DependentUpon>TimeCardManager.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Time Keeping.resx">
       <DependentUpon>Time Keeping.vb</DependentUpon>

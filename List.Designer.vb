@@ -230,37 +230,37 @@ Partial Class List
         '
         Me.cm_list.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.cmi_show, Me.cmi_update, Me.cmi_overrides, Me.cmi_dtr, Me.cmi_remove})
         Me.cm_list.Name = "cm_list"
-        Me.cm_list.Size = New System.Drawing.Size(170, 114)
+        Me.cm_list.Size = New System.Drawing.Size(181, 136)
         Me.cm_list.Text = "Edit Record"
         '
         'cmi_show
         '
         Me.cmi_show.Name = "cmi_show"
-        Me.cmi_show.Size = New System.Drawing.Size(169, 22)
+        Me.cmi_show.Size = New System.Drawing.Size(180, 22)
         Me.cmi_show.Text = "Show"
         '
         'cmi_update
         '
         Me.cmi_update.Name = "cmi_update"
-        Me.cmi_update.Size = New System.Drawing.Size(169, 22)
+        Me.cmi_update.Size = New System.Drawing.Size(180, 22)
         Me.cmi_update.Text = "Update"
         '
         'cmi_overrides
         '
         Me.cmi_overrides.Name = "cmi_overrides"
-        Me.cmi_overrides.Size = New System.Drawing.Size(169, 22)
+        Me.cmi_overrides.Size = New System.Drawing.Size(180, 22)
         Me.cmi_overrides.Text = "Override"
         '
         'cmi_dtr
         '
         Me.cmi_dtr.Name = "cmi_dtr"
-        Me.cmi_dtr.Size = New System.Drawing.Size(169, 22)
+        Me.cmi_dtr.Size = New System.Drawing.Size(180, 22)
         Me.cmi_dtr.Text = "Print Time Record"
         '
         'cmi_remove
         '
         Me.cmi_remove.Name = "cmi_remove"
-        Me.cmi_remove.Size = New System.Drawing.Size(169, 22)
+        Me.cmi_remove.Size = New System.Drawing.Size(180, 22)
         Me.cmi_remove.Text = "Remove/Disable"
         '
         'MetroLabel6
