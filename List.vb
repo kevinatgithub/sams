@@ -16,6 +16,13 @@ Public Class List
         Employee.LoadPositionsToComboBox(Positions, cbo_position)
         currentUser = User.GetCurrent
 
+        If currentUser IsNot Nothing Then
+            If currentUser.ulevel > 1 Then
+                cmi_remove.Enabled = False
+                cmi_overrides.Enabled = False
+                cmi_dtr.Enabled = False
+            End If
+        End If
     End Sub
 
     Function QueryForEmployeeList()
@@ -58,7 +65,7 @@ Public Class List
         End If
 
         Return "SELECT e.employee_no, e.fname, e.mname, e.lname, e.gender, e.dob, e.position, o.name " &
-            "FROM employee e INNER JOIN office o ON (e.office = o.id) WHERE e.disabled_dt IS NULL " & filter
+            "FROM employee e INNER JOIN office o ON (e.office = o.id) WHERE e.disabled_dt IS NULL " & filter & " ORDER BY e.fname, e.mname, e.lname"
     End Function
 
     Function ColumnsForEmployeeList()

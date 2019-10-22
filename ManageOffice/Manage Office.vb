@@ -15,6 +15,7 @@
         columns.Add("id")
         columns.Add("name")
         columns.Add("signatory")
+        columns.Add("signatory_position")
         Return columns
     End Function
 
@@ -51,6 +52,7 @@
         CurrentOffice = Nothing
         txt_officeName.Text = Nothing
         txt_signatory.Text = Nothing
+        txt_signatory_position.Text = Nothing
         btn_cancel.Visible = False
         lbl_formstate.Text = "Create New Office"
 
@@ -60,6 +62,7 @@
         CurrentOffice = office
         txt_officeName.Text = office.Name
         txt_signatory.Text = office.Signatory
+        txt_signatory_position.Text = office.SignatoryPosition
         btn_cancel.Visible = True
         lbl_formstate.Text = "Update Office"
     End Sub
@@ -87,15 +90,15 @@
     End Sub
 
     Private Sub btn_newOffice_Click(sender As Object, e As EventArgs) Handles btn_newOffice.Click
-        If txt_officeName.Text = "" Or txt_signatory.Text = "" Then
-            MsgBox("Please Provide Office Name and Signatory")
+        If txt_officeName.Text = "" Or txt_signatory.Text = "" Or txt_signatory_position.Text = "" Then
+            MsgBox("Please Provide Office Name, Signatory, and Signatory Position")
             Return
         End If
 
         If CurrentOffice Is Nothing Then
-            Database.DB.Execute("INSERT INTO office VALUES(null,'" & txt_officeName.Text & "','" & txt_signatory.Text & "')")
+            Database.DB.Execute("INSERT INTO office VALUES(null,'" & txt_officeName.Text & "','" & txt_signatory.Text & "','" & txt_signatory_position.Text & "')")
         Else
-            Database.DB.Execute("UPDATE office SET name = '" & txt_officeName.Text & "', signatory = '" & txt_signatory.Text & "' WHERE id = ' " & CurrentOffice.ID & "'")
+            Database.DB.Execute("UPDATE office SET name = '" & txt_officeName.Text & "', signatory = '" & txt_signatory.Text & "' , signatory_position = '" & txt_signatory_position.Text & "' WHERE id = ' " & CurrentOffice.ID & "'")
         End If
 
         

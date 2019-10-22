@@ -7,6 +7,7 @@ Public Class Office
     Public Name As String = Nothing
     Public Signatory As String = Nothing
     Public Shared Offices As Collection = Office.GetAllOffices
+    Public SignatoryPosition As String = Nothing
 
     Public Shared Function FindById(ByVal id As String)
         Dim result As MySqlDataReader = Database.DB.Execute("SELECT * FROM office WHERE id = '" & id & "' LIMIT 1")
@@ -24,6 +25,7 @@ Public Class Office
             office.ID = result("id")
             office.Name = result("name")
             office.Signatory = result("signatory")
+            office.SignatoryPosition = CanYou.HandleDBNull(result("signatory_position"))
         End With
         
         Return office
@@ -34,6 +36,7 @@ Public Class Office
         noffice.ID = 0
         noffice.Name = "Show All"
         noffice.Signatory = ""
+        noffice.SignatoryPosition = ""
         Return noffice
     End Function
 
@@ -49,6 +52,7 @@ Public Class Office
             office.Id = offices_dr("id")
             office.Name = offices_dr("name")
             office.Signatory = offices_dr("signatory")
+            office.SignatoryPosition = CanYou.HandleDBNull(offices_dr("signatory_position"))
             offices.Add(office)
             i += 1
         End While

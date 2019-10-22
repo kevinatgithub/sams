@@ -37,17 +37,20 @@ Partial Class ManageOffices
         Me.cmi_update = New System.Windows.Forms.ToolStripMenuItem()
         Me.cmi_delete = New System.Windows.Forms.ToolStripMenuItem()
         Me.btn_cancel = New MetroFramework.Controls.MetroButton()
+        Me.SignatoryPosition = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.txt_signatory_position = New MetroFramework.Controls.MetroTextBox()
+        Me.MetroLabel3 = New MetroFramework.Controls.MetroLabel()
         Me.cm_offices.SuspendLayout()
         Me.SuspendLayout()
         '
         'lv_offices
         '
-        Me.lv_offices.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ID, Me.OfficeName, Me.Signatory})
+        Me.lv_offices.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ID, Me.OfficeName, Me.Signatory, Me.SignatoryPosition})
         Me.lv_offices.FullRowSelect = True
         Me.lv_offices.GridLines = True
         Me.lv_offices.Location = New System.Drawing.Point(23, 95)
         Me.lv_offices.Name = "lv_offices"
-        Me.lv_offices.Size = New System.Drawing.Size(535, 307)
+        Me.lv_offices.Size = New System.Drawing.Size(818, 546)
         Me.lv_offices.TabIndex = 4
         Me.lv_offices.UseCompatibleStateImageBehavior = False
         Me.lv_offices.View = System.Windows.Forms.View.Details
@@ -65,11 +68,11 @@ Partial Class ManageOffices
         'Signatory
         '
         Me.Signatory.Text = "Signatory"
-        Me.Signatory.Width = 200
+        Me.Signatory.Width = 289
         '
         'btn_newOffice
         '
-        Me.btn_newOffice.Location = New System.Drawing.Point(564, 252)
+        Me.btn_newOffice.Location = New System.Drawing.Point(847, 315)
         Me.btn_newOffice.Name = "btn_newOffice"
         Me.btn_newOffice.Size = New System.Drawing.Size(105, 23)
         Me.btn_newOffice.TabIndex = 2
@@ -79,7 +82,7 @@ Partial Class ManageOffices
         'MetroLabel1
         '
         Me.MetroLabel1.AutoSize = True
-        Me.MetroLabel1.Location = New System.Drawing.Point(564, 134)
+        Me.MetroLabel1.Location = New System.Drawing.Point(847, 134)
         Me.MetroLabel1.Name = "MetroLabel1"
         Me.MetroLabel1.Size = New System.Drawing.Size(84, 19)
         Me.MetroLabel1.TabIndex = 2
@@ -87,7 +90,7 @@ Partial Class ManageOffices
         '
         'txt_officeName
         '
-        Me.txt_officeName.Location = New System.Drawing.Point(564, 157)
+        Me.txt_officeName.Location = New System.Drawing.Point(847, 157)
         Me.txt_officeName.Name = "txt_officeName"
         Me.txt_officeName.Size = New System.Drawing.Size(216, 23)
         Me.txt_officeName.TabIndex = 0
@@ -95,15 +98,15 @@ Partial Class ManageOffices
         'MetroLabel2
         '
         Me.MetroLabel2.AutoSize = True
-        Me.MetroLabel2.Location = New System.Drawing.Point(564, 187)
+        Me.MetroLabel2.Location = New System.Drawing.Point(847, 187)
         Me.MetroLabel2.Name = "MetroLabel2"
-        Me.MetroLabel2.Size = New System.Drawing.Size(64, 19)
+        Me.MetroLabel2.Size = New System.Drawing.Size(65, 19)
         Me.MetroLabel2.TabIndex = 4
         Me.MetroLabel2.Text = "Signatory"
         '
         'txt_signatory
         '
-        Me.txt_signatory.Location = New System.Drawing.Point(564, 210)
+        Me.txt_signatory.Location = New System.Drawing.Point(847, 210)
         Me.txt_signatory.Name = "txt_signatory"
         Me.txt_signatory.Size = New System.Drawing.Size(216, 23)
         Me.txt_signatory.TabIndex = 1
@@ -113,7 +116,7 @@ Partial Class ManageOffices
         Me.lbl_formstate.AutoSize = True
         Me.lbl_formstate.FontSize = MetroFramework.MetroLabelSize.Tall
         Me.lbl_formstate.FontWeight = MetroFramework.MetroLabelWeight.Regular
-        Me.lbl_formstate.Location = New System.Drawing.Point(564, 95)
+        Me.lbl_formstate.Location = New System.Drawing.Point(847, 95)
         Me.lbl_formstate.Name = "lbl_formstate"
         Me.lbl_formstate.Size = New System.Drawing.Size(154, 25)
         Me.lbl_formstate.TabIndex = 6
@@ -140,7 +143,7 @@ Partial Class ManageOffices
         '
         'btn_cancel
         '
-        Me.btn_cancel.Location = New System.Drawing.Point(675, 252)
+        Me.btn_cancel.Location = New System.Drawing.Point(958, 315)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(105, 23)
         Me.btn_cancel.TabIndex = 3
@@ -148,12 +151,35 @@ Partial Class ManageOffices
         Me.btn_cancel.Theme = MetroFramework.MetroThemeStyle.Dark
         Me.btn_cancel.Visible = False
         '
+        'SignatoryPosition
+        '
+        Me.SignatoryPosition.Text = "Signatory Position"
+        Me.SignatoryPosition.Width = 203
+        '
+        'txt_signatory_position
+        '
+        Me.txt_signatory_position.Location = New System.Drawing.Point(847, 269)
+        Me.txt_signatory_position.Name = "txt_signatory_position"
+        Me.txt_signatory_position.Size = New System.Drawing.Size(216, 23)
+        Me.txt_signatory_position.TabIndex = 7
+        '
+        'MetroLabel3
+        '
+        Me.MetroLabel3.AutoSize = True
+        Me.MetroLabel3.Location = New System.Drawing.Point(847, 246)
+        Me.MetroLabel3.Name = "MetroLabel3"
+        Me.MetroLabel3.Size = New System.Drawing.Size(114, 19)
+        Me.MetroLabel3.TabIndex = 8
+        Me.MetroLabel3.Text = "Signatory Position"
+        '
         'ManageOffices
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle
-        Me.ClientSize = New System.Drawing.Size(790, 425)
+        Me.ClientSize = New System.Drawing.Size(1074, 656)
+        Me.Controls.Add(Me.txt_signatory_position)
+        Me.Controls.Add(Me.MetroLabel3)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.lbl_formstate)
         Me.Controls.Add(Me.txt_signatory)
@@ -183,4 +209,7 @@ Partial Class ManageOffices
     Friend WithEvents cmi_update As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents cmi_delete As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents btn_cancel As MetroFramework.Controls.MetroButton
+    Friend WithEvents SignatoryPosition As ColumnHeader
+    Friend WithEvents txt_signatory_position As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents MetroLabel3 As MetroFramework.Controls.MetroLabel
 End Class

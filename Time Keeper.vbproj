@@ -75,10 +75,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>3499DBD32BF3341C3E926C28DD05F441505FE5DD</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>B1AEF40EC0A4B49C14B7AD236BA64BA147726FF4</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Time Keeper_2_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Time Keeper_3_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DPFPDevNET, Version=1.4.0.1, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
@@ -145,6 +145,7 @@
     <Compile Include="Classes\AppConfig.vb" />
     <Compile Include="Classes\Database.vb" />
     <Compile Include="Classes\CanYou.vb" />
+    <Compile Include="Classes\Dtr.vb" />
     <Compile Include="Classes\Employee.vb" />
     <Compile Include="Classes\FingerPrint.vb" />
     <Compile Include="Classes\Office.vb" />
@@ -229,6 +230,12 @@
       <DependentUpon>Show Employee.vb</DependentUpon>
     </Compile>
     <Compile Include="Show Employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Time Card Printing\PrintPreview.Designer.vb">
+      <DependentUpon>PrintPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Time Card Printing\PrintPreview.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Time Card Printing\TimeCardManager.Designer.vb">
@@ -320,6 +327,9 @@
     <EmbeddedResource Include="Show Employee.resx">
       <DependentUpon>Show Employee.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Time Card Printing\PrintPreview.resx">
+      <DependentUpon>PrintPreview.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Time Card Printing\TimeCardManager.resx">
       <DependentUpon>TimeCardManager.vb</DependentUpon>
     </EmbeddedResource>
@@ -360,6 +370,7 @@
     <None Include="packages.config" />
     <None Include="Time Keeper_1_TemporaryKey.pfx" />
     <None Include="Time Keeper_2_TemporaryKey.pfx" />
+    <None Include="Time Keeper_3_TemporaryKey.pfx" />
     <None Include="Time Keeper_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
