@@ -108,7 +108,7 @@ Public Class TimeCardManager
         con.OpenConnection()
         Dim command As New MySqlCommand(query, con.Connection)
         command.Parameters.AddWithValue("@year", cb_year.SelectedItem)
-        command.Parameters.AddWithValue("@month", cb_month.SelectedIndex)
+        command.Parameters.AddWithValue("@month", cb_month.SelectedIndex + 1)
         command.Parameters.AddWithValue("@cutoff", cb_cutoff.SelectedIndex)
         command.Parameters.AddWithValue("@holidays", txt_holidays.Text)
         command.Parameters.AddWithValue("@holidays_no_remarks", txt_holidays_no_remarks.Text)
@@ -143,7 +143,7 @@ Public Class TimeCardManager
         Dim command As New MySqlCommand(query, con.Connection)
         command.Parameters.AddWithValue("@employee_id", employee.Id)
         command.Parameters.AddWithValue("@year", cb_year.SelectedItem)
-        command.Parameters.AddWithValue("@month", cb_month.SelectedIndex)
+        command.Parameters.AddWithValue("@month", cb_month.SelectedIndex + 1)
         command.Parameters.AddWithValue("@cutoff", cb_cutoff.SelectedIndex)
         command.Parameters.AddWithValue("@holidays", txt_holidays.Text)
         command.Parameters.AddWithValue("@holidays_no_remarks", txt_holidays_no_remarks.Text)
@@ -233,7 +233,7 @@ Public Class TimeCardManager
         state.id = reader("id")
         state.employee = employee
         state.year = reader("year")
-        state.month = reader("month")
+        state.month = reader("month") - 1
         state.cutoff = reader("cutoff")
         state.holidays = reader("holidays")
         state.holidays_no_remarks = reader("holidays_no_remarks")

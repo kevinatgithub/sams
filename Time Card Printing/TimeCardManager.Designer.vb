@@ -227,6 +227,7 @@ Partial Class TimeCardManager
         '
         'txt_holidays_no_remarks
         '
+        Me.txt_holidays_no_remarks.Enabled = False
         Me.txt_holidays_no_remarks.Location = New System.Drawing.Point(211, 332)
         Me.txt_holidays_no_remarks.Name = "txt_holidays_no_remarks"
         Me.txt_holidays_no_remarks.Size = New System.Drawing.Size(150, 20)
@@ -284,6 +285,7 @@ Partial Class TimeCardManager
         '
         'txt_halfdays
         '
+        Me.txt_halfdays.Enabled = False
         Me.txt_halfdays.Location = New System.Drawing.Point(211, 486)
         Me.txt_halfdays.Name = "txt_halfdays"
         Me.txt_halfdays.Size = New System.Drawing.Size(150, 20)
@@ -351,6 +353,7 @@ Partial Class TimeCardManager
         'c_show_ot_remarks
         '
         Me.c_show_ot_remarks.AutoSize = True
+        Me.c_show_ot_remarks.Enabled = False
         Me.c_show_ot_remarks.Location = New System.Drawing.Point(211, 372)
         Me.c_show_ot_remarks.Name = "c_show_ot_remarks"
         Me.c_show_ot_remarks.Size = New System.Drawing.Size(44, 17)

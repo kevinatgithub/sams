@@ -75,7 +75,7 @@ Public Class PrintPreview
         While ToDate > FromDate
 
             If FromDate.DayOfWeek = whatDay Then
-                thatDays.Add(FromDate.DayOfWeek.ToString)
+                thatDays.Add(FromDate.Day)
             End If
 
             FromDate += aDay
