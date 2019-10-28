@@ -19,9 +19,14 @@ Public Class PrintPreview
     End Sub
 
     Public Sub form_load() Handles Me.Load
+
+        wb_dtr.Width = Me.Width - 20
+
         'wb_dtr.ScriptErrorsSuppressed = True
-        Dim month_str As String = dtr.month.PadLeft(2, "0")
-        Dim last_day_str As String = DateTime.DaysInMonth(dtr.year, dtr.month).ToString
+        Dim month_number = (dtr.month + 1).ToString
+
+        Dim month_str As String = month_number.PadLeft(2, "0")
+        Dim last_day_str As String = DateTime.DaysInMonth(dtr.year, month_number).ToString
         Dim frm_str As String = dtr.year + "-" + month_str + "-1"
         If dtr.cutoff = 0 Then
             last_day_str = "15"
@@ -42,7 +47,7 @@ Public Class PrintPreview
         Dim url_str As String = config.ServerURL
         url_str += "?employee_no=" + dtr.employee.Id
         url_str += "&year=" + dtr.year
-        url_str += "&month=" + dtr.month
+        url_str += "&month=" + month_number
         url_str += "&cutoff=" + (dtr.cutoff + 1).ToString
         url_str += "&signatory=" + dtr.signatory
         url_str += "&position=" + dtr.position
@@ -84,5 +89,12 @@ Public Class PrintPreview
         Return thatDays
     End Function
 
+    Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
+        wb_dtr.Print()
+        MsgBox("DTR Printed")
+    End Sub
 
+    Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
+        Me.Close()
+    End Sub
 End Class

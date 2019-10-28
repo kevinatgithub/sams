@@ -68,109 +68,122 @@ Partial Class List
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(142, 20)
+        Me.PictureBox1.Location = New System.Drawing.Point(189, 25)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 35)
+        Me.PictureBox1.Size = New System.Drawing.Size(43, 43)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'MetroLabel1
         '
         Me.MetroLabel1.AutoSize = True
-        Me.MetroLabel1.Location = New System.Drawing.Point(23, 203)
+        Me.MetroLabel1.Location = New System.Drawing.Point(31, 250)
+        Me.MetroLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(73, 19)
+        Me.MetroLabel1.Size = New System.Drawing.Size(76, 20)
         Me.MetroLabel1.TabIndex = 2
         Me.MetroLabel1.Text = "First Name"
         '
         'txt_fname
         '
-        Me.txt_fname.Location = New System.Drawing.Point(23, 225)
+        Me.txt_fname.Location = New System.Drawing.Point(31, 277)
+        Me.txt_fname.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_fname.Name = "txt_fname"
-        Me.txt_fname.Size = New System.Drawing.Size(163, 23)
+        Me.txt_fname.Size = New System.Drawing.Size(217, 28)
         Me.txt_fname.TabIndex = 3
         '
         'txt_mname
         '
-        Me.txt_mname.Location = New System.Drawing.Point(23, 273)
+        Me.txt_mname.Location = New System.Drawing.Point(31, 336)
+        Me.txt_mname.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_mname.Name = "txt_mname"
-        Me.txt_mname.Size = New System.Drawing.Size(163, 23)
+        Me.txt_mname.Size = New System.Drawing.Size(217, 28)
         Me.txt_mname.TabIndex = 5
         '
         'MetroLabel2
         '
         Me.MetroLabel2.AutoSize = True
-        Me.MetroLabel2.Location = New System.Drawing.Point(23, 251)
+        Me.MetroLabel2.Location = New System.Drawing.Point(31, 309)
+        Me.MetroLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel2.Name = "MetroLabel2"
-        Me.MetroLabel2.Size = New System.Drawing.Size(90, 19)
+        Me.MetroLabel2.Size = New System.Drawing.Size(93, 20)
         Me.MetroLabel2.TabIndex = 4
         Me.MetroLabel2.Text = "Middle Name"
         '
         'txt_lname
         '
-        Me.txt_lname.Location = New System.Drawing.Point(23, 321)
+        Me.txt_lname.Location = New System.Drawing.Point(31, 395)
+        Me.txt_lname.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_lname.Name = "txt_lname"
-        Me.txt_lname.Size = New System.Drawing.Size(163, 23)
+        Me.txt_lname.Size = New System.Drawing.Size(217, 28)
         Me.txt_lname.TabIndex = 7
         '
         'MetroLabel3
         '
         Me.MetroLabel3.AutoSize = True
-        Me.MetroLabel3.Location = New System.Drawing.Point(23, 299)
+        Me.MetroLabel3.Location = New System.Drawing.Point(31, 368)
+        Me.MetroLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel3.Name = "MetroLabel3"
-        Me.MetroLabel3.Size = New System.Drawing.Size(71, 19)
+        Me.MetroLabel3.Size = New System.Drawing.Size(75, 20)
         Me.MetroLabel3.TabIndex = 6
         Me.MetroLabel3.Text = "Last Name"
         '
         'btn_search
         '
-        Me.btn_search.Location = New System.Drawing.Point(23, 469)
+        Me.btn_search.Location = New System.Drawing.Point(31, 577)
+        Me.btn_search.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_search.Name = "btn_search"
-        Me.btn_search.Size = New System.Drawing.Size(75, 23)
+        Me.btn_search.Size = New System.Drawing.Size(100, 28)
         Me.btn_search.TabIndex = 8
         Me.btn_search.Text = "Search"
         Me.btn_search.Theme = MetroFramework.MetroThemeStyle.Dark
         '
         'btn_register
         '
-        Me.btn_register.Location = New System.Drawing.Point(23, 513)
+        Me.btn_register.Location = New System.Drawing.Point(31, 631)
+        Me.btn_register.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_register.Name = "btn_register"
-        Me.btn_register.Size = New System.Drawing.Size(162, 23)
+        Me.btn_register.Size = New System.Drawing.Size(216, 28)
         Me.btn_register.TabIndex = 9
         Me.btn_register.Text = "New Employee"
         '
         'txt_employee_no
         '
-        Me.txt_employee_no.Location = New System.Drawing.Point(23, 177)
+        Me.txt_employee_no.Location = New System.Drawing.Point(31, 218)
+        Me.txt_employee_no.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_employee_no.Name = "txt_employee_no"
-        Me.txt_employee_no.Size = New System.Drawing.Size(163, 23)
+        Me.txt_employee_no.Size = New System.Drawing.Size(217, 28)
         Me.txt_employee_no.TabIndex = 11
         '
         'MetroLabel4
         '
         Me.MetroLabel4.AutoSize = True
-        Me.MetroLabel4.Location = New System.Drawing.Point(23, 155)
+        Me.MetroLabel4.Location = New System.Drawing.Point(31, 191)
+        Me.MetroLabel4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel4.Name = "MetroLabel4"
-        Me.MetroLabel4.Size = New System.Drawing.Size(120, 19)
+        Me.MetroLabel4.Size = New System.Drawing.Size(127, 20)
         Me.MetroLabel4.TabIndex = 10
         Me.MetroLabel4.Text = "Employee Number"
         '
         'MetroLabel5
         '
         Me.MetroLabel5.AutoSize = True
-        Me.MetroLabel5.Location = New System.Drawing.Point(23, 101)
+        Me.MetroLabel5.Location = New System.Drawing.Point(31, 124)
+        Me.MetroLabel5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel5.Name = "MetroLabel5"
-        Me.MetroLabel5.Size = New System.Drawing.Size(53, 19)
+        Me.MetroLabel5.Size = New System.Drawing.Size(57, 20)
         Me.MetroLabel5.TabIndex = 12
         Me.MetroLabel5.Text = "Division"
         '
         'cbo_division
         '
         Me.cbo_division.FormattingEnabled = True
-        Me.cbo_division.ItemHeight = 23
-        Me.cbo_division.Location = New System.Drawing.Point(23, 123)
+        Me.cbo_division.ItemHeight = 24
+        Me.cbo_division.Location = New System.Drawing.Point(31, 151)
+        Me.cbo_division.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbo_division.Name = "cbo_division"
-        Me.cbo_division.Size = New System.Drawing.Size(163, 29)
+        Me.cbo_division.Size = New System.Drawing.Size(216, 30)
         Me.cbo_division.TabIndex = 14
         '
         'lv_employees
@@ -179,9 +192,10 @@ Partial Class List
         Me.lv_employees.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
         Me.lv_employees.FullRowSelect = True
         Me.lv_employees.GridLines = True
-        Me.lv_employees.Location = New System.Drawing.Point(213, 101)
+        Me.lv_employees.Location = New System.Drawing.Point(284, 124)
+        Me.lv_employees.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lv_employees.Name = "lv_employees"
-        Me.lv_employees.Size = New System.Drawing.Size(923, 925)
+        Me.lv_employees.Size = New System.Drawing.Size(1230, 1138)
         Me.lv_employees.TabIndex = 15
         Me.lv_employees.UseCompatibleStateImageBehavior = False
         Me.lv_employees.View = System.Windows.Forms.View.Details
@@ -228,126 +242,136 @@ Partial Class List
         '
         'cm_list
         '
+        Me.cm_list.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.cm_list.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.cmi_show, Me.cmi_update, Me.cmi_overrides, Me.cmi_dtr, Me.cmi_remove})
         Me.cm_list.Name = "cm_list"
-        Me.cm_list.Size = New System.Drawing.Size(161, 114)
+        Me.cm_list.Size = New System.Drawing.Size(189, 124)
         Me.cm_list.Text = "Edit Record"
         '
         'cmi_show
         '
         Me.cmi_show.Name = "cmi_show"
-        Me.cmi_show.Size = New System.Drawing.Size(160, 22)
+        Me.cmi_show.Size = New System.Drawing.Size(188, 24)
         Me.cmi_show.Text = "Show"
         '
         'cmi_update
         '
         Me.cmi_update.Name = "cmi_update"
-        Me.cmi_update.Size = New System.Drawing.Size(160, 22)
+        Me.cmi_update.Size = New System.Drawing.Size(188, 24)
         Me.cmi_update.Text = "Update"
         '
         'cmi_overrides
         '
         Me.cmi_overrides.Name = "cmi_overrides"
-        Me.cmi_overrides.Size = New System.Drawing.Size(160, 22)
+        Me.cmi_overrides.Size = New System.Drawing.Size(188, 24)
         Me.cmi_overrides.Text = "Override"
         '
         'cmi_dtr
         '
         Me.cmi_dtr.Name = "cmi_dtr"
-        Me.cmi_dtr.Size = New System.Drawing.Size(160, 22)
+        Me.cmi_dtr.Size = New System.Drawing.Size(188, 24)
         Me.cmi_dtr.Text = "Manage DTR"
         '
         'cmi_remove
         '
         Me.cmi_remove.Name = "cmi_remove"
-        Me.cmi_remove.Size = New System.Drawing.Size(160, 22)
+        Me.cmi_remove.Size = New System.Drawing.Size(188, 24)
         Me.cmi_remove.Text = "Remove/Disable"
         '
         'MetroLabel6
         '
         Me.MetroLabel6.AutoSize = True
-        Me.MetroLabel6.Location = New System.Drawing.Point(824, 36)
+        Me.MetroLabel6.Location = New System.Drawing.Point(1099, 44)
+        Me.MetroLabel6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel6.Name = "MetroLabel6"
-        Me.MetroLabel6.Size = New System.Drawing.Size(84, 19)
+        Me.MetroLabel6.Size = New System.Drawing.Size(88, 20)
         Me.MetroLabel6.TabIndex = 16
         Me.MetroLabel6.Text = "Logged In as"
         '
         'lbl_currentuser
         '
         Me.lbl_currentuser.AutoSize = True
-        Me.lbl_currentuser.Location = New System.Drawing.Point(934, 36)
+        Me.lbl_currentuser.Location = New System.Drawing.Point(1245, 44)
+        Me.lbl_currentuser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_currentuser.Name = "lbl_currentuser"
-        Me.lbl_currentuser.Size = New System.Drawing.Size(69, 19)
+        Me.lbl_currentuser.Size = New System.Drawing.Size(72, 20)
         Me.lbl_currentuser.TabIndex = 17
         Me.lbl_currentuser.Text = "Full Name"
         '
         'btn_logout
         '
-        Me.btn_logout.Location = New System.Drawing.Point(1054, 72)
+        Me.btn_logout.Location = New System.Drawing.Point(1405, 89)
+        Me.btn_logout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_logout.Name = "btn_logout"
-        Me.btn_logout.Size = New System.Drawing.Size(82, 23)
+        Me.btn_logout.Size = New System.Drawing.Size(109, 28)
         Me.btn_logout.TabIndex = 18
         Me.btn_logout.Text = "Logout"
         '
         'btn_manageOffices
         '
-        Me.btn_manageOffices.Location = New System.Drawing.Point(23, 542)
+        Me.btn_manageOffices.Location = New System.Drawing.Point(31, 667)
+        Me.btn_manageOffices.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_manageOffices.Name = "btn_manageOffices"
-        Me.btn_manageOffices.Size = New System.Drawing.Size(162, 23)
+        Me.btn_manageOffices.Size = New System.Drawing.Size(216, 28)
         Me.btn_manageOffices.TabIndex = 19
         Me.btn_manageOffices.Text = "Manage Offices"
         '
         'MetroLabel7
         '
         Me.MetroLabel7.AutoSize = True
-        Me.MetroLabel7.Location = New System.Drawing.Point(23, 347)
+        Me.MetroLabel7.Location = New System.Drawing.Point(31, 427)
+        Me.MetroLabel7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel7.Name = "MetroLabel7"
-        Me.MetroLabel7.Size = New System.Drawing.Size(52, 19)
+        Me.MetroLabel7.Size = New System.Drawing.Size(56, 20)
         Me.MetroLabel7.TabIndex = 20
         Me.MetroLabel7.Text = "Gender"
         '
         'cbo_gender
         '
         Me.cbo_gender.FormattingEnabled = True
-        Me.cbo_gender.ItemHeight = 23
+        Me.cbo_gender.ItemHeight = 24
         Me.cbo_gender.Items.AddRange(New Object() {"Male", "Female", "Show All"})
-        Me.cbo_gender.Location = New System.Drawing.Point(23, 369)
+        Me.cbo_gender.Location = New System.Drawing.Point(31, 454)
+        Me.cbo_gender.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbo_gender.Name = "cbo_gender"
-        Me.cbo_gender.Size = New System.Drawing.Size(163, 29)
+        Me.cbo_gender.Size = New System.Drawing.Size(216, 30)
         Me.cbo_gender.TabIndex = 22
         '
         'cbo_position
         '
         Me.cbo_position.FormattingEnabled = True
-        Me.cbo_position.ItemHeight = 23
-        Me.cbo_position.Location = New System.Drawing.Point(24, 423)
+        Me.cbo_position.ItemHeight = 24
+        Me.cbo_position.Location = New System.Drawing.Point(32, 521)
+        Me.cbo_position.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbo_position.Name = "cbo_position"
-        Me.cbo_position.Size = New System.Drawing.Size(163, 29)
+        Me.cbo_position.Size = New System.Drawing.Size(216, 30)
         Me.cbo_position.TabIndex = 24
         '
         'MetroLabel8
         '
         Me.MetroLabel8.AutoSize = True
-        Me.MetroLabel8.Location = New System.Drawing.Point(24, 401)
+        Me.MetroLabel8.Location = New System.Drawing.Point(32, 494)
+        Me.MetroLabel8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel8.Name = "MetroLabel8"
-        Me.MetroLabel8.Size = New System.Drawing.Size(54, 19)
+        Me.MetroLabel8.Size = New System.Drawing.Size(56, 20)
         Me.MetroLabel8.TabIndex = 23
         Me.MetroLabel8.Text = "Position"
         '
         'btn_verify_employee
         '
-        Me.btn_verify_employee.Location = New System.Drawing.Point(24, 571)
+        Me.btn_verify_employee.Location = New System.Drawing.Point(32, 703)
+        Me.btn_verify_employee.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_verify_employee.Name = "btn_verify_employee"
-        Me.btn_verify_employee.Size = New System.Drawing.Size(162, 23)
+        Me.btn_verify_employee.Size = New System.Drawing.Size(216, 28)
         Me.btn_verify_employee.TabIndex = 25
         Me.btn_verify_employee.Text = "Verify Employee"
         '
         'List
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle
-        Me.ClientSize = New System.Drawing.Size(1159, 1041)
+        Me.ClientSize = New System.Drawing.Size(1545, 1102)
         Me.Controls.Add(Me.btn_verify_employee)
         Me.Controls.Add(Me.cbo_position)
         Me.Controls.Add(Me.MetroLabel8)
@@ -371,13 +395,15 @@ Partial Class List
         Me.Controls.Add(Me.txt_fname)
         Me.Controls.Add(Me.MetroLabel1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "List"
-        Me.Resizable = false
+        Me.Padding = New System.Windows.Forms.Padding(27, 74, 27, 25)
+        Me.Resizable = False
         Me.ShadowType = MetroFramework.Forms.MetroForm.MetroFormShadowType.DropShadow
         Me.Style = MetroFramework.MetroColorStyle.Green
         Me.Text = "Employees"
-        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.cm_list.ResumeLayout(false)
         Me.ResumeLayout(false)
         Me.PerformLayout

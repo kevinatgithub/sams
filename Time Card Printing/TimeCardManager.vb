@@ -5,7 +5,22 @@ Public Class TimeCardManager
 
     Dim employee As Employee
     Dim current As Dtr
-    Private select_query As String = "SELECT id, concat_ws(' / ',year,month) as yearmonth, 
+    Private select_query As String = "SELECT id, concat_ws(' ',year,
+            case month
+                when month = 0 then 'January'
+                when month = 1 then 'February'
+                when month = 2 then 'March'
+                when month = 3 then 'April'
+                when month = 4 then 'May'
+                when month = 5 then 'June'
+                when month = 6 then 'July'
+                when month = 7 then 'August'
+                when month = 8 then 'September'
+                when month = 9 then 'October'
+                when month = 10 then 'November'
+                when month = 11 then 'December'
+            end
+        ) as yearmonth, 
         case
             when cutoff = 0 then '1st Cutoff'
             when cutoff = 1 then '2nd Cutoff'
@@ -189,11 +204,9 @@ Public Class TimeCardManager
                 cm_dtr.Show(Cursor.Position)
                 If lv_dtrs.SelectedItems.Count > 1 Then
                     PrintPreviewToolStripMenuItem.Visible = False
-                    PrintToolStripMenuItem.Visible = False
                     UpdateToolStripMenuItem.Visible = False
                 Else
                     PrintPreviewToolStripMenuItem.Visible = True
-                    PrintToolStripMenuItem.Visible = True
                     UpdateToolStripMenuItem.Visible = True
                 End If
             End If
