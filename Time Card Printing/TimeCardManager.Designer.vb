@@ -72,89 +72,80 @@ Partial Class TimeCardManager
         'lbl_employee_name
         '
         Me.lbl_employee_name.AutoSize = True
-        Me.lbl_employee_name.Location = New System.Drawing.Point(31, 78)
-        Me.lbl_employee_name.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_employee_name.Location = New System.Drawing.Point(23, 63)
         Me.lbl_employee_name.Name = "lbl_employee_name"
-        Me.lbl_employee_name.Size = New System.Drawing.Size(170, 17)
+        Me.lbl_employee_name.Size = New System.Drawing.Size(128, 13)
         Me.lbl_employee_name.TabIndex = 1
         Me.lbl_employee_name.Text = "Kevin Porferio D. Cainday"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(435, 78)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(326, 63)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 17)
+        Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Name"
         '
         'lbl_employee_position
         '
         Me.lbl_employee_position.AutoSize = True
-        Me.lbl_employee_position.Location = New System.Drawing.Point(31, 106)
-        Me.lbl_employee_position.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_employee_position.Location = New System.Drawing.Point(23, 86)
         Me.lbl_employee_position.Name = "lbl_employee_position"
-        Me.lbl_employee_position.Size = New System.Drawing.Size(86, 17)
+        Me.lbl_employee_position.Size = New System.Drawing.Size(66, 13)
         Me.lbl_employee_position.TabIndex = 3
         Me.lbl_employee_position.Text = "I.T. Officer 1"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(423, 106)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(317, 86)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 17)
+        Me.Label4.Size = New System.Drawing.Size(44, 13)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Position"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(435, 138)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(326, 112)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 17)
+        Me.Label5.Size = New System.Drawing.Size(35, 13)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Office"
         '
         'lbl_employee_office
         '
         Me.lbl_employee_office.AutoSize = True
-        Me.lbl_employee_office.Location = New System.Drawing.Point(31, 138)
-        Me.lbl_employee_office.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_employee_office.Location = New System.Drawing.Point(23, 112)
         Me.lbl_employee_office.Name = "lbl_employee_office"
-        Me.lbl_employee_office.Size = New System.Drawing.Size(91, 17)
+        Me.lbl_employee_office.Size = New System.Drawing.Size(72, 13)
         Me.lbl_employee_office.TabIndex = 6
         Me.lbl_employee_office.Text = "NVBSP - IMU"
         '
         'cb_year
         '
         Me.cb_year.FormattingEnabled = True
-        Me.cb_year.Location = New System.Drawing.Point(332, 222)
-        Me.cb_year.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cb_year.Location = New System.Drawing.Point(249, 180)
         Me.cb_year.Name = "cb_year"
-        Me.cb_year.Size = New System.Drawing.Size(148, 24)
+        Me.cb_year.Size = New System.Drawing.Size(112, 21)
         Me.cb_year.TabIndex = 7
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(31, 225)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(23, 183)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(71, 17)
+        Me.Label7.Size = New System.Drawing.Size(55, 13)
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "DTR Year"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(31, 267)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(23, 217)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(47, 17)
+        Me.Label8.Size = New System.Drawing.Size(37, 13)
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "Month"
         '
@@ -162,19 +153,17 @@ Partial Class TimeCardManager
         '
         Me.cb_month.FormattingEnabled = True
         Me.cb_month.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "Jully", "August", "September", "October", "November", "December"})
-        Me.cb_month.Location = New System.Drawing.Point(332, 267)
-        Me.cb_month.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cb_month.Location = New System.Drawing.Point(249, 217)
         Me.cb_month.Name = "cb_month"
-        Me.cb_month.Size = New System.Drawing.Size(148, 24)
+        Me.cb_month.Size = New System.Drawing.Size(112, 21)
         Me.cb_month.TabIndex = 9
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(31, 315)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(23, 256)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 17)
+        Me.Label9.Size = New System.Drawing.Size(38, 13)
         Me.Label9.TabIndex = 12
         Me.Label9.Text = "Cut-off"
         '
@@ -182,202 +171,179 @@ Partial Class TimeCardManager
         '
         Me.cb_cutoff.FormattingEnabled = True
         Me.cb_cutoff.Items.AddRange(New Object() {"1st Cut-off", "2nd Cut-off", "Full Month"})
-        Me.cb_cutoff.Location = New System.Drawing.Point(332, 311)
-        Me.cb_cutoff.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cb_cutoff.Location = New System.Drawing.Point(249, 253)
         Me.cb_cutoff.Name = "cb_cutoff"
-        Me.cb_cutoff.Size = New System.Drawing.Size(148, 24)
+        Me.cb_cutoff.Size = New System.Drawing.Size(112, 21)
         Me.cb_cutoff.TabIndex = 11
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(31, 742)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Location = New System.Drawing.Point(23, 603)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(68, 17)
+        Me.Label11.Size = New System.Drawing.Size(51, 13)
         Me.Label11.TabIndex = 15
         Me.Label11.Text = "Signatory"
         '
         'txt_signatory
         '
-        Me.txt_signatory.Location = New System.Drawing.Point(281, 738)
-        Me.txt_signatory.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_signatory.Location = New System.Drawing.Point(211, 600)
         Me.txt_signatory.Name = "txt_signatory"
-        Me.txt_signatory.Size = New System.Drawing.Size(199, 22)
+        Me.txt_signatory.Size = New System.Drawing.Size(150, 20)
         Me.txt_signatory.TabIndex = 16
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(31, 784)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(23, 637)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(58, 17)
+        Me.Label12.Size = New System.Drawing.Size(44, 13)
         Me.Label12.TabIndex = 17
         Me.Label12.Text = "Position"
         '
         'txt_position
         '
-        Me.txt_position.Location = New System.Drawing.Point(281, 780)
-        Me.txt_position.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_position.Location = New System.Drawing.Point(211, 634)
         Me.txt_position.Name = "txt_position"
-        Me.txt_position.Size = New System.Drawing.Size(199, 22)
+        Me.txt_position.Size = New System.Drawing.Size(150, 20)
         Me.txt_position.TabIndex = 18
         '
         'txt_holidays
         '
-        Me.txt_holidays.Location = New System.Drawing.Point(281, 362)
-        Me.txt_holidays.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_holidays.Location = New System.Drawing.Point(211, 294)
         Me.txt_holidays.Name = "txt_holidays"
-        Me.txt_holidays.Size = New System.Drawing.Size(199, 22)
+        Me.txt_holidays.Size = New System.Drawing.Size(150, 20)
         Me.txt_holidays.TabIndex = 20
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(31, 366)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Location = New System.Drawing.Point(23, 297)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(62, 17)
+        Me.Label13.Size = New System.Drawing.Size(47, 13)
         Me.Label13.TabIndex = 19
         Me.Label13.Text = "Holidays"
         '
         'txt_holidays_no_remarks
         '
         Me.txt_holidays_no_remarks.Enabled = False
-        Me.txt_holidays_no_remarks.Location = New System.Drawing.Point(281, 409)
-        Me.txt_holidays_no_remarks.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_holidays_no_remarks.Location = New System.Drawing.Point(211, 332)
         Me.txt_holidays_no_remarks.Name = "txt_holidays_no_remarks"
-        Me.txt_holidays_no_remarks.Size = New System.Drawing.Size(199, 22)
+        Me.txt_holidays_no_remarks.Size = New System.Drawing.Size(150, 20)
         Me.txt_holidays_no_remarks.TabIndex = 22
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(31, 412)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Location = New System.Drawing.Point(23, 335)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(154, 17)
+        Me.Label14.Size = New System.Drawing.Size(115, 13)
         Me.Label14.TabIndex = 21
         Me.Label14.Text = "Holidays (No Remarks)"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(31, 459)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Location = New System.Drawing.Point(23, 373)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(134, 17)
+        Me.Label15.Size = New System.Drawing.Size(103, 13)
         Me.Label15.TabIndex = 23
         Me.Label15.Text = "Show O.T. Remarks"
         '
         'txt_absents
         '
-        Me.txt_absents.Location = New System.Drawing.Point(281, 502)
-        Me.txt_absents.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_absents.Location = New System.Drawing.Point(211, 408)
         Me.txt_absents.Name = "txt_absents"
-        Me.txt_absents.Size = New System.Drawing.Size(199, 22)
+        Me.txt_absents.Size = New System.Drawing.Size(150, 20)
         Me.txt_absents.TabIndex = 26
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(31, 506)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Location = New System.Drawing.Point(23, 411)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(59, 17)
+        Me.Label16.Size = New System.Drawing.Size(45, 13)
         Me.Label16.TabIndex = 25
         Me.Label16.Text = "Absents"
         '
         'txt_off
         '
-        Me.txt_off.Location = New System.Drawing.Point(281, 546)
-        Me.txt_off.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_off.Location = New System.Drawing.Point(211, 444)
         Me.txt_off.Name = "txt_off"
-        Me.txt_off.Size = New System.Drawing.Size(199, 22)
+        Me.txt_off.Size = New System.Drawing.Size(150, 20)
         Me.txt_off.TabIndex = 28
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(31, 550)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Location = New System.Drawing.Point(23, 447)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(71, 17)
+        Me.Label17.Size = New System.Drawing.Size(54, 13)
         Me.Label17.TabIndex = 27
         Me.Label17.Text = "Off Duties"
         '
         'txt_halfdays
         '
-        Me.txt_halfdays.Enabled = False
-        Me.txt_halfdays.Location = New System.Drawing.Point(281, 598)
-        Me.txt_halfdays.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_halfdays.Location = New System.Drawing.Point(211, 486)
         Me.txt_halfdays.Name = "txt_halfdays"
-        Me.txt_halfdays.Size = New System.Drawing.Size(199, 22)
+        Me.txt_halfdays.Size = New System.Drawing.Size(150, 20)
         Me.txt_halfdays.TabIndex = 30
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(31, 602)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Location = New System.Drawing.Point(23, 489)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(69, 17)
+        Me.Label18.Size = New System.Drawing.Size(53, 13)
         Me.Label18.TabIndex = 29
         Me.Label18.Text = "Half Days"
         '
         'txt_clear_entries
         '
-        Me.txt_clear_entries.Location = New System.Drawing.Point(281, 646)
-        Me.txt_clear_entries.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_clear_entries.Location = New System.Drawing.Point(211, 525)
         Me.txt_clear_entries.Name = "txt_clear_entries"
-        Me.txt_clear_entries.Size = New System.Drawing.Size(199, 22)
+        Me.txt_clear_entries.Size = New System.Drawing.Size(150, 20)
         Me.txt_clear_entries.TabIndex = 32
         '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(31, 650)
-        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Location = New System.Drawing.Point(23, 528)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(89, 17)
+        Me.Label19.Size = New System.Drawing.Size(66, 13)
         Me.Label19.TabIndex = 31
         Me.Label19.Text = "Clear Entries"
         '
         'txt_shifting_days
         '
-        Me.txt_shifting_days.Location = New System.Drawing.Point(281, 692)
-        Me.txt_shifting_days.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_shifting_days.Location = New System.Drawing.Point(211, 562)
         Me.txt_shifting_days.Name = "txt_shifting_days"
-        Me.txt_shifting_days.Size = New System.Drawing.Size(199, 22)
+        Me.txt_shifting_days.Size = New System.Drawing.Size(150, 20)
         Me.txt_shifting_days.TabIndex = 34
         '
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(31, 695)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Location = New System.Drawing.Point(23, 565)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(91, 17)
+        Me.Label20.Size = New System.Drawing.Size(69, 13)
         Me.Label20.TabIndex = 33
         Me.Label20.Text = "Shifting Days"
         '
         'btn_cancel
         '
-        Me.btn_cancel.Location = New System.Drawing.Point(381, 825)
-        Me.btn_cancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_cancel.Location = New System.Drawing.Point(286, 670)
         Me.btn_cancel.Name = "btn_cancel"
-        Me.btn_cancel.Size = New System.Drawing.Size(100, 28)
+        Me.btn_cancel.Size = New System.Drawing.Size(75, 23)
         Me.btn_cancel.TabIndex = 35
         Me.btn_cancel.Text = "Cancel"
         Me.btn_cancel.Theme = MetroFramework.MetroThemeStyle.Light
         '
         'btn_save
         '
-        Me.btn_save.Location = New System.Drawing.Point(260, 825)
-        Me.btn_save.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_save.Location = New System.Drawing.Point(195, 670)
         Me.btn_save.Name = "btn_save"
-        Me.btn_save.Size = New System.Drawing.Size(100, 28)
+        Me.btn_save.Size = New System.Drawing.Size(75, 23)
         Me.btn_save.TabIndex = 36
         Me.btn_save.Text = "Save"
         Me.btn_save.Theme = MetroFramework.MetroThemeStyle.Dark
@@ -386,10 +352,9 @@ Partial Class TimeCardManager
         '
         Me.c_show_ot_remarks.AutoSize = True
         Me.c_show_ot_remarks.Enabled = False
-        Me.c_show_ot_remarks.Location = New System.Drawing.Point(281, 458)
-        Me.c_show_ot_remarks.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.c_show_ot_remarks.Location = New System.Drawing.Point(211, 372)
         Me.c_show_ot_remarks.Name = "c_show_ot_remarks"
-        Me.c_show_ot_remarks.Size = New System.Drawing.Size(54, 21)
+        Me.c_show_ot_remarks.Size = New System.Drawing.Size(44, 17)
         Me.c_show_ot_remarks.TabIndex = 37
         Me.c_show_ot_remarks.Text = "Yes"
         Me.c_show_ot_remarks.UseVisualStyleBackColor = True
@@ -398,10 +363,10 @@ Partial Class TimeCardManager
         '
         Me.lv_dtrs.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader3, Me.ColumnHeader1, Me.ColumnHeader2})
         Me.lv_dtrs.GridLines = True
-        Me.lv_dtrs.Location = New System.Drawing.Point(547, 78)
-        Me.lv_dtrs.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.lv_dtrs.Location = New System.Drawing.Point(410, 63)
+        Me.lv_dtrs.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lv_dtrs.Name = "lv_dtrs"
-        Me.lv_dtrs.Size = New System.Drawing.Size(345, 774)
+        Me.lv_dtrs.Size = New System.Drawing.Size(260, 630)
         Me.lv_dtrs.TabIndex = 38
         Me.lv_dtrs.UseCompatibleStateImageBehavior = False
         Me.lv_dtrs.View = System.Windows.Forms.View.Details
@@ -426,42 +391,41 @@ Partial Class TimeCardManager
         Me.cm_dtr.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.cm_dtr.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrintPreviewToolStripMenuItem, Me.UpdateToolStripMenuItem, Me.DeleteToolStripMenuItem})
         Me.cm_dtr.Name = "cm_dtr"
-        Me.cm_dtr.Size = New System.Drawing.Size(211, 104)
+        Me.cm_dtr.Size = New System.Drawing.Size(144, 70)
         '
         'PrintPreviewToolStripMenuItem
         '
         Me.PrintPreviewToolStripMenuItem.Name = "PrintPreviewToolStripMenuItem"
-        Me.PrintPreviewToolStripMenuItem.Size = New System.Drawing.Size(210, 24)
+        Me.PrintPreviewToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.PrintPreviewToolStripMenuItem.Text = "Print Preview"
         '
         'UpdateToolStripMenuItem
         '
         Me.UpdateToolStripMenuItem.Name = "UpdateToolStripMenuItem"
-        Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(210, 24)
+        Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.UpdateToolStripMenuItem.Text = "Update"
         '
         'DeleteToolStripMenuItem
         '
         Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
-        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(210, 24)
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.DeleteToolStripMenuItem.Text = "Delete"
         '
         'lbl_state
         '
         Me.lbl_state.AutoSize = True
         Me.lbl_state.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_state.Location = New System.Drawing.Point(31, 181)
-        Me.lbl_state.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_state.Location = New System.Drawing.Point(23, 147)
         Me.lbl_state.Name = "lbl_state"
-        Me.lbl_state.Size = New System.Drawing.Size(153, 17)
+        Me.lbl_state.Size = New System.Drawing.Size(122, 13)
         Me.lbl_state.TabIndex = 39
         Me.lbl_state.Text = "Creating a new DTR"
         '
         'TimeCardManager
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(921, 882)
+        Me.ClientSize = New System.Drawing.Size(691, 717)
         Me.Controls.Add(Me.lbl_state)
         Me.Controls.Add(Me.lv_dtrs)
         Me.Controls.Add(Me.c_show_ot_remarks)
@@ -498,9 +462,7 @@ Partial Class TimeCardManager
         Me.Controls.Add(Me.lbl_employee_position)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lbl_employee_name)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "TimeCardManager"
-        Me.Padding = New System.Windows.Forms.Padding(27, 74, 27, 25)
         Me.ShadowType = MetroFramework.Forms.MetroForm.MetroFormShadowType.DropShadow
         Me.Text = "Manage Time Cards"
         Me.cm_dtr.ResumeLayout(False)

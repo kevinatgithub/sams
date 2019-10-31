@@ -36,11 +36,11 @@ Partial Class Time_Keeping
         Me.lbl_fullname = New System.Windows.Forms.Label()
         Me.lbl_date = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_pm_out = New System.Windows.Forms.Button()
         Me.btn_pm_in = New System.Windows.Forms.Button()
         Me.btn_am_out = New System.Windows.Forms.Button()
         Me.btn_am_in = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.pb_photo_default, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.pb_photo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -182,6 +182,16 @@ Partial Class Time_Keeping
         Me.Panel2.Size = New System.Drawing.Size(800, 400)
         Me.Panel2.TabIndex = 11
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(37, 376)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(27, 11)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "v 1.1.0"
+        '
         'btn_pm_out
         '
         Me.btn_pm_out.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
@@ -225,16 +235,6 @@ Partial Class Time_Keeping
         Me.btn_am_in.TabIndex = 0
         Me.btn_am_in.Text = "AM Time In"
         Me.btn_am_in.UseVisualStyleBackColor = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(37, 376)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(27, 11)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "v 1.0.1"
         '
         'Time_Keeping
         '
