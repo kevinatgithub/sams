@@ -5,6 +5,7 @@ Public Class PrintPreview
 
     Private config As AppConfig
     Private dtr As Dtr
+    Private database As Database
 
 
     Public Sub New(ByVal dtr As Dtr)
@@ -23,6 +24,10 @@ Public Class PrintPreview
         wb_dtr.Width = Me.Width - 20
 
         'wb_dtr.ScriptErrorsSuppressed = True
+        loadDtr()
+    End Sub
+
+    Private Sub loadDtr()
         Dim month_number = (dtr.month + 1).ToString
 
         Dim month_str As String = month_number.PadLeft(2, "0")
@@ -96,5 +101,39 @@ Public Class PrintPreview
 
     Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
         Me.Close()
+    End Sub
+
+    Private Sub btn_reload_Click(sender As Object, e As EventArgs) Handles btn_reload.Click
+        Dim id As Integer = dtr.id
+        Dim reader As MySqlDataReader = Database.DB.Execute("SELECT * FROM dtr WHERE id = " + id.ToString)
+        reader.Read()
+        dtr = readerAsDtr(reader)
+        loadDtr()
+    End Sub
+
+    Private Function readerAsDtr(ByVal reader As MySqlDataReader) As Dtr
+        Dim state As New Dtr
+        state.id = reader("id")
+        state.employee = dtr.employee
+        state.year = reader("year")
+        state.month = reader("month") - 1
+        state.cutoff = reader("cutoff")
+        state.holidays = reader("holidays")
+        state.holidays_no_remarks = reader("holidays_no_remarks")
+        state.show_ot_remarks = reader("show_ot_remarks")
+        state.absents = reader("absents")
+        state.off_duties = reader("off_duties")
+        state.half_days = reader("half_days")
+        state.clear_entries = reader("clear_entries")
+        state.shifting_days = reader("shifting_days")
+        state.signatory = reader("signatory")
+        state.position = reader("position")
+        Return state
+    End Function
+
+    Private Sub btn_copy_url_Click(sender As Object, e As EventArgs) Handles btn_copy_url.Click
+        Dim url As Uri = wb_dtr.Url
+        Clipboard.SetText(url.ToString)
+
     End Sub
 End Class
